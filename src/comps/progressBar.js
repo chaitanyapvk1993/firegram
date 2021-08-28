@@ -11,7 +11,7 @@ const ProgressBar = ({file,setFile}) => {
     //console.log(progress);
     useEffect(()=>{
         if(url){
-            setFile(null);
+            setFile(null,setFile);
         }
     },[url,setFile])
   return(
