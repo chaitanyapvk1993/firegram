@@ -11,9 +11,9 @@ const ProgressBar = ({file,setFile}) => {
     //console.log(progress);
     useEffect(()=>{
         if(url){
-            setFile(null,setFile);
+            setFile(null);
         }
-    },[url])
+    },[url,setFile])
   return(
     <div className="progress-bar" style={{width:progress+'%'}}> progressBar</div>
    )
